@@ -14,6 +14,7 @@ import Profile from './components/pages/Profile'
 import Skill from './components/pages/Skill'
 import Output from './components/pages/Output'
 import Header from './components/Header'
+import 'normalize.css'
 
 export default {
   name: 'App',
