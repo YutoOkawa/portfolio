@@ -1,9 +1,14 @@
 <template>
-    <div>
-        <a href="#" class="link-conten" @click="clickSmoothScroll('#top')">Top</a>
-        <a href="#" class="link-conten" @click="clickSmoothScroll('#profile')">Profile</a>
-        <a href="#" class="link-conten" @click="clickSmoothScroll('#skill')">Skill</a>
-        <a href="#" class="link-conten" @click="clickSmoothScroll('#output')">output</a>
+    <div class="header">
+        <div class="header-inner">
+            <h1 class="title">Yuto's Profile</h1>
+            <div class="nav">
+                <a href="#" class="nav-button" @click="clickSmoothScroll('#top')">Top</a>
+                <a href="#" class="nav-button" @click="clickSmoothScroll('#profile')">Profile</a>
+                <a href="#" class="nav-button" @click="clickSmoothScroll('#skill')">Skill</a>
+                <a href="#" class="nav-button" @click="clickSmoothScroll('#output')">Output</a>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -25,6 +30,31 @@ export default {
 </script>
 
 <style>
+.header{
+    background-color: #03111a;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-inner{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+}
+
+.title{
+  padding:20px 0px;
+  margin:unset;
+}
+
+.nav{
+  margin: auto ;
+  margin-right: 0;
+  padding: auto;
+}
+
 .nav-button{
   padding:10px;
   text-decoration: none;

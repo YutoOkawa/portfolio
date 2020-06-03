@@ -3,21 +3,6 @@
     <!-- <tab-menu></tab-menu>
     <router-view/> -->
     <Header id="header"></Header>
-    <!-- <div class="nav-res">
-      <a href="#" class="link-conten" @click="clickSmoothScroll('#top')">
-        <p class="comment">Top</p>
-      </a>
-      <a href="#" class="link-conten" @click="clickSmoothScroll('#profile')">
-        <p class="comment">Profile</p>
-      </a>
-      <a href="#" class="link-conten" @click="clickSmoothScroll('#skill')">
-        <p class="comment">Skill</p>
-      </a>
-      <a href="#" class="link-conten" @click="clickSmoothScroll('#output')">
-        <p class="comment">Output</p>
-      </a>
-    </div> -->
-
     <Top id="top"></Top>
     <Profile id="profile"></Profile>
     <Skill id="skill"></Skill>
@@ -26,7 +11,6 @@
 </template>
 
 <script>
-// import TabMenu from './components/TabMenu'
 import Top from './components/pages/Top'
 import Profile from './components/pages/Profile'
 import Skill from './components/pages/Skill'
@@ -36,7 +20,6 @@ import Header from './components/Header'
 export default {
   name: 'App',
   components: {
-    // TabMenu,
     Header,
     Top,Profile,Skill,Output
   },
@@ -62,6 +45,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.header{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+  background-color: pink;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 </style>
