@@ -1,6 +1,6 @@
 <template>
     <div class="profile">
-        <h1> {{ msg }} </h1>
+        <h1 class="content-title"> {{ msg }} </h1>
         <p> {{ text }} </p>
     </div>
 </template>

@@ -23,6 +23,7 @@ export default {
 
 div.output {
     text-align: center;
+    height: 500px;
 }
 
 div.content {

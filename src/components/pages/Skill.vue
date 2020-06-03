@@ -1,6 +1,6 @@
 <template>
     <div class="skill">
-        <h1> {{ msg }} </h1>
+        <h1 class="content-title"> {{ msg }} </h1>
         <h4> {{ text }} </h4>
     </div>
 </template>
@@ -21,7 +21,7 @@ export default {
 
 div {
     background-color: orange;
-    height: 300px;
+    height: 500px;
 }
 
 h1 {

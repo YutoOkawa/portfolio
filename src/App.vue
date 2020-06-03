@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <!-- <tab-menu></tab-menu>
-    <router-view/> -->
     <Header id="header"></Header>
     <Top id="top"></Top>
     <Profile id="profile"></Profile>
@@ -46,17 +44,13 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-.header{
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 1;
-  background-color: pink;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.content-title {
+  padding: 120px 0 20px 0;
+  margin: 50px 20% 100px 20%;
+  position: relative;
+  font-size: 2em;
+  color: #333;
+  border-bottom: rgba(12, 50, 78, 0.4) 3px solid;
 }
+
 </style>

@@ -19,7 +19,7 @@ export default {
             event.preventDefault()
             this.$SmoothScroll(
                 document.querySelector(x),
-                800,
+                900,
                 null,
                 null,
                 'y'
