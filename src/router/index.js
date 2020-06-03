@@ -4,8 +4,10 @@ import Top from '@/components/pages/Top'
 import Profile from '@/components/pages/Profile'
 import Skill from '@/components/pages/Skill'
 import Output from '@/components/pages/Output'
+import smoothScroll from 'vue-smoothscroll'
 
 Vue.use(Router)
+Vue.use(smoothScroll)
 
 export default new Router({
     routes: [
