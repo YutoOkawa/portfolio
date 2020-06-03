@@ -20,12 +20,12 @@ export default {
 <style scoped>
 
 div {
-    background-color: pink;
+    background-color: white;
     height: 500px;
 }
 
 h1 {
-    color: white;
+    color: black;
 }
 
 p {

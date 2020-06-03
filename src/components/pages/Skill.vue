@@ -10,7 +10,7 @@ export default {
     name: 'Skill',
     data () {
         return {
-            msg: '触ったことのある言語',
+            msg: 'Skill List',
             text: 'Go言語, Python, C言語, C++, JavaScript, Node.js, Vue.js, Arduino, Java'
         }
     }
@@ -20,12 +20,12 @@ export default {
 <style scoped>
 
 div {
-    background-color: orange;
+    background-color: white;
     height: 500px;
 }
 
 h1 {
-    color: white;
+    color: black;
 }
 
 p {
