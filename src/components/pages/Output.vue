@@ -1,11 +1,13 @@
 <template>
-    <div class="output">
+    <div>
         <h1 class="content-title"> {{ msg }} </h1>
-        <div class="content" v-for="(output, index) in outputs" :key="index">
-            <a :href="output.url">{{ output.name }}</a>
-            <p> {{ output.text }} </p>
-            <p>使用言語</p>
-            <p>{{ output.lang }}</p>
+        <div class="output">
+            <div class="content" v-for="(output, index) in outputs" :key="index">
+                <a :href="output.url">{{ output.name }}</a>
+                <p> {{ output.text }} </p>
+                <p>使用言語</p>
+                <p>{{ output.lang }}</p>
+            </div>
         </div>
     </div>
 </template>
@@ -41,20 +43,22 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '@/assets/style/_mixin.scss';
 
 div.output {
-    text-align: center;
-    height: 500px;
+    @include box-wrapper;
 }
 
 div.content {
-    background-color: white;
-    box-shadow: 0px 0px 10px 0px;
-    border-radius: 20px 20px 20px 20px;
-    display: inline-block;
-    margin: 10px;
-    width: 40%;
+    // background-color: white;
+    // box-shadow: 0px 0px 10px 0px;
+    // border-radius: 20px 20px 20px 20px;
+    // display: inline-block;
+    // margin: 10px;
+    // width: 40%;
+    @include box-shadow;
+    @include box(40%)
 }
 
 a {
