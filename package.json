@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "sass-resources-loader": "^2.0.3",
     "vue": "^2.6.11",
     "vue-smoothscroll": "^0.2.0"
   },
