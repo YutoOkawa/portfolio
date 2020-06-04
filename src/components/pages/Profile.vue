@@ -1,7 +1,7 @@
 <template>
     <div class="profile">
         <h1 class="content-title"> {{ msg }} </h1>
-        <p> {{ text }} </p>
+            <p> {{ text }} </p>
     </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
     name: 'Profile',
     data () {
         return {
-            msg: '自己紹介',
+            msg: 'Profile',
             text: '暗号とFIDOについて勉強しています。'
         }
     }
@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 
-div {
+div.profile {
     background-color: white;
     height: 500px;
 }

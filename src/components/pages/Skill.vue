@@ -1,7 +1,11 @@
 <template>
     <div class="skill">
         <h1 class="content-title"> {{ msg }} </h1>
-        <h4> {{ text }} </h4>
+        <div class="content" v-for="(skill, index) in skills" :key="index">
+            <h4> {{ skill.name }} </h4>
+            <!-- <h4> {{ skill.text }} </h4> -->
+            <img :src="skill.logo" class="lang_icon">
+        </div>
     </div>
 </template>
 
@@ -11,17 +15,58 @@ export default {
     data () {
         return {
             msg: 'Skill List',
-            text: 'Go言語, Python, C言語, C++, JavaScript, Node.js, Vue.js, Arduino, Java'
+            skills: [
+                {
+                    name: 'Golang',
+                    logo: '/img/Go-Logo_Blue.svg'
+                },
+                {
+                    name: 'Python',
+                    logo: '/img/icons8-python.svg'
+                },
+                {
+                    name: 'C',
+                    logo: '/img/c-2975.svg'
+                },
+                {
+                    name: 'C++',
+                    logo: '/img/c.svg'
+                },
+                {
+                    name: 'Java',
+                    logo: '/img/java-4.svg'
+                },
+                {
+                    name: 'JavaScript',
+                    logo: '/img/javascript-1.svg'
+                },
+                {
+                    name: 'Node.js',
+                    logo: '/img/Node.js_logo.svg'
+                },
+                {
+                    name: 'Vue.js',
+                    logo: '/img/logo.svg'
+                },
+                {
+                    name: 'Git',
+                    logo: '/img/git-icon.svg'
+                }
+            ]
         }
     }
 }
 </script>
 
 <style scoped>
-
-div {
+div.skill {
     background-color: white;
-    height: 500px;
+}
+
+div.content {
+    display: inline-block;
+    margin: 10px;
+    width: 15%;
 }
 
 h1 {
@@ -31,5 +76,10 @@ h1 {
 p {
     width: 60%;
     display: inline-block;
+}
+
+.lang_icon {
+    height: 75px;
+    width: 75px;
 }
 </style>

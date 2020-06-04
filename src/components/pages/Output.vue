@@ -1,8 +1,9 @@
 <template>
     <div class="output">
-        <div class="content" v-for="i in 6" :key="i">
-            <h3> {{ name }} </h3>
-            <p> {{ text }} </p>
+        <h1 class="content-title"> {{ msg }} </h1>
+        <div class="content" v-for="(output, index) in outputs" :key="index">
+            <h3> {{ output.name }} </h3>
+            <p> {{ output.text }} </p>
         </div>
     </div>
 </template>
@@ -12,8 +13,13 @@ export default {
     name: 'Output',
     data () {
         return {
-            name: 'テスト',
-            text: 'テスト'
+            msg: 'Output List',
+            outputs: [
+                {
+                    name: 'Test',
+                    text: 'Test'
+                }
+            ]
         }
     }
 }
@@ -40,7 +46,7 @@ h3 {
 p {
     width: 90%;
     display: inline-block;
-    text-align: left;
+    text-align: center;
 }
 
 </style>

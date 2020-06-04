@@ -18,7 +18,6 @@ export default {
 <style scoped>
 
 div {
-    /* background-image: url('../../assets/image/person-sky-silhouette-night-32237.jpg'); */
     background-color: #03111a;
     background-size: cover;
     height: 60vh;
