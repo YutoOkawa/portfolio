@@ -4,7 +4,7 @@
         <div class="content" v-for="(skill, index) in skills" :key="index">
             <h4> {{ skill.name }} </h4>
             <!-- <h4> {{ skill.text }} </h4> -->
-            <img :src="skill.logo" class="lang_icon">
+            <img v-bind:src="skill.logo" class="lang_icon">
         </div>
     </div>
 </template>
@@ -18,39 +18,39 @@ export default {
             skills: [
                 {
                     name: 'Golang',
-                    logo: '/img/Go-Logo_Blue.svg'
+                    logo: require('@/assets/image/Go-Logo_Blue.svg')
                 },
                 {
                     name: 'Python',
-                    logo: '/img/icons8-python.svg'
+                    logo: require('@/assets/image/icons8-python.svg')
                 },
                 {
                     name: 'C',
-                    logo: '/img/c-2975.svg'
+                    logo: require('@/assets/image/c-2975.svg')
                 },
                 {
                     name: 'C++',
-                    logo: '/img/c.svg'
+                    logo: require('@/assets/image/c.svg')
                 },
                 {
                     name: 'Java',
-                    logo: '/img/java-4.svg'
+                    logo: require('@/assets/image/java-4.svg')
                 },
                 {
                     name: 'JavaScript',
-                    logo: '/img/javascript-1.svg'
+                    logo: require('@/assets/image/javascript-1.svg')
                 },
                 {
                     name: 'Node.js',
-                    logo: '/img/Node.js_logo.svg'
+                    logo: require('@/assets/image/Node.js_logo.svg')
                 },
                 {
                     name: 'Vue.js',
-                    logo: '/img/logo.svg'
+                    logo: require('@/assets/image/logo.svg')
                 },
                 {
                     name: 'Git',
-                    logo: '/img/git-icon.svg'
+                    logo: require('@/assets/image/git-icon.svg')
                 }
             ]
         }
