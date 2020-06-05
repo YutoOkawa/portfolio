@@ -3,10 +3,10 @@
         <h1 class="content-title"> {{ msg }} </h1>
         <div class="output">
             <div class="content" v-for="(output, index) in outputs" :key="index">
-                <a :href="output.url">{{ output.name }}</a>
-                <p> {{ output.text }} </p>
-                <p>使用言語</p>
-                <p>{{ output.lang }}</p>
+                <h2><a :href="output.url">{{ output.name }}</a></h2>
+                <h3> {{ output.text }} </h3>
+                <h2>使用言語</h2>
+                <h3>{{ output.lang }}</h3>
             </div>
         </div>
     </div>
@@ -21,13 +21,13 @@ export default {
             outputs: [
                 {
                     name: 'Attribute-Based Signature',
-                    text: '属性ベース署名のアルゴリズムをPythonで実装し、Node.jsから呼び出すサンプルプログラム',
+                    text: '属性ベース署名の実行サンプルプログラムです。Pythonで属性ベース署名のアルゴリズムを実装し、Node.jsから呼びだしています。ペアリング演算には、PythonのライブラリであるCharm-Cryptoを使用しています。',
                     url: 'https://github.com/YutoOkawa/node_ABS',
                     lang: 'Python, Node.js'
                 },
                 {
                     name: 'My Portfolio Site',
-                    text: '初めてのフロントエンド作成のため、様々なサイトを参考にし作成しました',
+                    text: 'このポートフォリオです。初めてのフロントエンド作成のため、いろんな方のポートフォリオを拝見し吸収し作成しました。',
                     url: 'https://yutookawa.github.io/portfolio',
                     lang: 'Vue.js'
                 },
@@ -35,7 +35,13 @@ export default {
                     name: 'partDownloader',
                     text: 'メルカリの「プログラミング言語Go完全入門」にて取り組んだ課題で作成したプログラムです。goroutineを用いて、Web上のファイルを高速に取得することができます。',
                     url: 'https://github.com/YutoOkawa/partDownloader',
-                    lang: 'golang'
+                    lang: 'Golang'
+                },
+                {
+                    name: '属性ベース暗号方式を用いたFIDO2の拡張による代理認証の実現',
+                    text: 'SPT2020(オンライン開催)にて発表した論文です。FIDO認証に属性ベース暗号方式を組み込むことで、ユーザの所持する属性によるアクセス制御が可能としました。',
+                    url: 'https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=203398&item_no=1&page_id=13&block_id=8',
+                    lang: '日本語'
                 }
             ]
         }
@@ -51,28 +57,16 @@ div.output {
 }
 
 div.content {
-    // background-color: white;
-    // box-shadow: 0px 0px 10px 0px;
-    // border-radius: 20px 20px 20px 20px;
-    // display: inline-block;
-    // margin: 10px;
-    // width: 40%;
     @include box-shadow;
     @include box(40%)
 }
 
-a {
-    font-size: 2em;
+h2 {
+    @include box-title;
 }
 
 h3 {
-    color: black;
-}
-
-p {
-    width: 90%;
-    display: inline-block;
-    text-align: center;
+    @include box-text;
 }
 
 </style>
