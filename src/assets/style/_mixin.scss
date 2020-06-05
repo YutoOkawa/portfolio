@@ -23,3 +23,13 @@
         margin: 0px 0px 40px 0px;
     }
 }
+
+@mixin box-title {
+    font-size: 1.5em;
+}
+
+@mixin box-text {
+    text-align: left;
+    margin: 20px 20px;
+    word-break: break-all;
+}

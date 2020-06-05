@@ -3,9 +3,9 @@
         <h1 class="content-title"> {{ msg }} </h1>
         <div class="skill">
             <div class="content" v-for="(skill, index) in skills" :key="index">
-                <h4> {{ skill.name }} </h4>
+                <h4 class="skill_name"> {{ skill.name }} </h4>
                 <img v-bind:src="skill.logo" class="lang_icon">
-                <h4 class="lang_text"> {{ skill.text }} </h4>
+                <h4 class="skill_text"> {{ skill.text }} </h4>
             </div>
         </div>
     </div>
@@ -81,10 +81,12 @@ div.content {
     @include box(40%)
 }
 
-h4.lang_text {
-    text-align: left;
-    margin: 0 20px;
-    word-break: break-all;
+h4.skill_text {
+    @include box-text;
+}
+
+h4.skill_name {
+    @include box-title;
 }
 
 h1 {
