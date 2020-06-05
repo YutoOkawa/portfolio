@@ -3,9 +3,9 @@
         <h1 class="content-title"> {{ msg }} </h1>
         <div class="skill">
             <div class="content" v-for="(skill, index) in skills" :key="index">
-                <h4 class="skill_name"> {{ skill.name }} </h4>
+                <h2 class="skill_name"> {{ skill.name }} </h2>
                 <img v-bind:src="skill.logo" class="lang_icon">
-                <h4 class="skill_text"> {{ skill.text }} </h4>
+                <h3 class="skill_text"> {{ skill.text }} </h3>
             </div>
         </div>
     </div>
@@ -72,25 +72,21 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/style/_mixin.scss';
 
-div.skill {
+.skill {
     @include box-wrapper;
 }
 
-div.content {
+.content {
     @include box-shadow;
     @include box(40%)
 }
 
-h4.skill_text {
-    @include box-text;
-}
-
-h4.skill_name {
+.skill_name {
     @include box-title;
 }
 
-h1 {
-    color: black;
+.skill_text {
+    @include box-text;
 }
 
 p {

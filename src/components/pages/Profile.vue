@@ -5,9 +5,9 @@
         </h1>
         <div class="profile">
             <div class="content" v-for="(content, index) in contents" :key="index">
-                <h1 class="profile_title">
+                <h2 class="profile_title">
                     <font-awesome-icon :icon="content.icon" class="icon"/> {{ content.title }}
-                </h1>
+                </h2>
                 <h3 v-if="content.url!=null">
                     <a :href="content.url"> {{ content.text }} </a>
                 </h3>
@@ -70,19 +70,19 @@ export default {
 @import '@/assets/style/_mixin.scss';
 
 
-div.profile {
+.profile {
     @include box-wrapper;
 }
 
-div.content {
+.content {
     @include box(30%)
 }
 
-div.profile_title {
+.profile_title {
     @include box-title;
 }
 
-div.profile_text {
+.profile_text {
     @include box-text;
 }
 
