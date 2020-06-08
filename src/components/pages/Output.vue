@@ -6,9 +6,11 @@
                 <h2 class="output_title">
                     <a :href="output.url">{{ output.name }}</a>
                 </h2>
-                <h3 class="output_text"> {{ output.text }} </h3>
+                <div class="content-text" v-for="(text, index2) in output.text" :key="index2">
+                    <p class="output_text"> {{ text }} </p>
+                </div>
                 <h2 class="output_title">使用言語</h2>
-                <h3 class="output_text">{{ output.lang }}</h3>
+                <p class="output_langtext">{{ output.lang }}</p>
             </div>
         </div>
     </div>
@@ -23,25 +25,25 @@ export default {
             outputs: [
                 {
                     name: 'Attribute-Based Signature',
-                    text: '属性ベース署名の実行サンプルプログラムです。Pythonで属性ベース署名のアルゴリズムを実装し、Node.jsから呼びだしています。ペアリング演算には、PythonのライブラリであるCharm-Cryptoを使用しています。',
+                    text: ['属性ベース署名の実行サンプルプログラムです。', 'Pythonで属性ベース署名のアルゴリズムを実装し、Node.jsから呼びだしています。', 'ペアリング演算には、Pythonのライブラリである、Charm-Cryptoを使用しています。'],
                     url: 'https://github.com/YutoOkawa/node_ABS',
                     lang: 'Python, Node.js'
                 },
                 {
                     name: 'My Portfolio Site',
-                    text: 'このポートフォリオです。初めてのフロントエンド作成のため、いろんな方のポートフォリオを拝見し吸収し作成しました。',
+                    text: ['このポートフォリオです。', '初めてのフロントエンド作成のため、いろんな方のポートフォリオを拝見し吸収し作成しました。'],
                     url: 'https://yutookawa.github.io/portfolio',
                     lang: 'Vue.js'
                 },
                 {
                     name: 'partDownloader',
-                    text: 'メルカリの「プログラミング言語Go完全入門」にて取り組んだ課題で作成したプログラムです。goroutineを用いて、Web上のファイルを高速に取得することができます。',
+                    text: ['メルカリの「プログラミング言語Go完全入門」にて取り組んだ課題で作成したプログラムです。', 'goroutineを用いて、Web上のファイルを高速に取得することができます。'],
                     url: 'https://github.com/YutoOkawa/partDownloader',
                     lang: 'Golang'
                 },
                 {
                     name: '属性ベース暗号方式を用いたFIDO2の拡張による代理認証の実現',
-                    text: 'SPT2020(オンライン開催)にて発表した論文です。FIDO認証に属性ベース暗号方式を組み込むことで、ユーザの所持する属性によるアクセス制御が可能としました。',
+                    text: ['SPT2020(オンライン開催)にて発表した論文です。', 'FIDO認証に属性ベース暗号方式を組み込むことで、ユーザの所持する属性によるアクセス制御が可能としました。'],
                     url: 'https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=203398&item_no=1&page_id=13&block_id=8',
                     lang: '日本語'
                 }
@@ -69,6 +71,12 @@ export default {
 
 .output_text {
     @include box-text;
+    text-align: left;
+}
+
+.output_langtext {
+    @include box-text;
+    text-align: center;
 }
 
 </style>

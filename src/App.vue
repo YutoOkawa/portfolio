@@ -39,10 +39,11 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&display=swap');
 
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', 'M PLUS 1p', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

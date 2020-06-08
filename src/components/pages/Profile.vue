@@ -8,12 +8,12 @@
                 <h2 class="profile_title">
                     <font-awesome-icon :icon="content.icon" class="icon"/> {{ content.title }}
                 </h2>
-                <h3 v-if="content.url!=null">
+                <p v-if="content.url!=null">
                     <a :href="content.url"> {{ content.text }} </a>
-                </h3>
-                <h3 v-else class="profile_text">
+                </p>
+                <p v-else class="profile_text">
                     {{ content.text }}
-                </h3>
+                </p>
             </div>
         </div>
     </div>
@@ -84,6 +84,7 @@ export default {
 
 .profile_text {
     @include box-text;
+    text-align: center;
 }
 
 .icon {
