@@ -1,9 +1,24 @@
+@mixin section {
+    padding: 60px 12vw;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 1250px) {
+        padding: 30px 50px;
+        border:none;
+    }
+
+    @media (max-width: 670px) {
+        padding: 30px;
+    }
+}
+
 @mixin box-wrapper {
     display: flex;
     margin: 0;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 @mixin box-shadow {
@@ -13,10 +28,10 @@
 @mixin box($width) {
     width: $width;
     vertical-align: top;
-    margin: 10px 20px 40px 10px;
+    margin: 10px 10px 20px 10px;
     border-radius: 20px 20px 20px 20px;
     position: relative;
-    padding-bottom: 64px;
+    padding-bottom: 40px;
 
     @media (max-width: 670px) {
         width: 80%;

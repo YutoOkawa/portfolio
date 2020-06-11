@@ -18,13 +18,13 @@ export default {
 <style scoped>
 
 div {
-    background-color: #03111a;
+    background-color: #cfebdf;
     background-size: cover;
     height: 60vh;
 }
 
 h1 {
-    color: white;
+    color: #4e878c;
     padding: 100px 0 20px 0;
     margin: 0px 20% 100px 20%;
 }

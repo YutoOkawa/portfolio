@@ -31,7 +31,7 @@ export default {
 
 <style>
 .header{
-    background-color: #03111a;
+    background-color: #cfebdf;
     position: sticky;
     top: 0;
     width: 100%;
@@ -47,6 +47,7 @@ export default {
 .title{
   padding:20px 0px;
   margin:unset;
+  color: #4e878c;
 }
 
 .nav{
@@ -62,6 +63,6 @@ export default {
   margin-right:10px;
   margin-left: 10px;
   outline: none;
-  color: whitesmoke;
+  color: #4e878c;
 }
 </style>

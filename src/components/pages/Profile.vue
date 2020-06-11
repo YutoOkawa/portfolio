@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="section">
         <h1 class="content-title">
             <font-awesome-icon icon="user-circle" class="icon"/> {{ msg }}
         </h1>
@@ -69,13 +69,17 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/style/_mixin.scss';
 
+.section {
+    @include section;
+}
 
 .profile {
     @include box-wrapper;
 }
 
 .content {
-    @include box(30%)
+    @include box(30%);
+    background-color: #e2fadb;
 }
 
 .profile_title {

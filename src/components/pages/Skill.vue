@@ -1,13 +1,11 @@
 <template>
-    <div>
+    <div class="section">
         <h1 class="content-title"> {{ msg }} </h1>
         <div class="skill">
             <div class="content" v-for="(skill, index) in skills" :key="index">
                 <h2 class="skill_name"> {{ skill.name }} </h2>
-                <img v-bind:src="skill.logo" class="lang_icon">
-                <div class="content-text" v-for="(text, index2) in skill.text" :key="index2">
-                    <p class="skill_text"> {{ text }} </p>
-                </div>
+                <img v-bind:src="skill.logo" class="lang_icon"><br>
+                <p class="skill_text"> {{ skill.text }} </p>
             </div>
         </div>
     </div>
@@ -23,47 +21,47 @@ export default {
                 {
                     name: 'Golang',
                     logo: require('@/assets/image/Go-Logo_Blue.svg'),
-                    text: ['今一番熱心に取り組んでいます。', 'プログラミング言語Go完全入門を一通り勉強し、現在はWebアプリケーションを作成するべく勉強を続けています。'],
+                    text: '今一番熱心に取り組んでいます。プログラミング言語Go完全入門を一通り勉強し、現在はWebアプリケーションを作成するべく勉強を続けています。',
                 },
                 {
                     name: 'Python',
                     logo: require('@/assets/image/icons8-python.svg'),
-                    text: ['楕円曲線暗号でよく用いられるペアリング演算を用いた暗号アルゴリズムの実装や、簡単なプログラムなどに使っています。', '2年ほど前から使い始め、今はメインの言語となっています。'],
+                    text: '楕円曲線暗号でよく用いられるペアリング演算を用いた暗号アルゴリズムの実装や、簡単なプログラムなどに使っています。年ほど前から使い始め、今はメインの言語となっています。',
                 },
                 {
                     name: 'C',
                     logo: require('@/assets/image/c-2975.svg'),
-                    text: ['大学1回生でプログラミングを始めて最初に習った言語でした。', '授業でシェルやサーバのプログラムを書きました。', 'また、スタックオーバーフロー等のCに潜む脆弱性を突く実験をしました。'],
+                    text: '大学1回生でプログラミングを始めて最初に習った言語でした。授業でシェルやサーバのプログラムを書きました。また、スタックオーバーフロー等のCに潜む脆弱性を突く実験をしました。',
                 },
                 {
                     name: 'C++',
                     logo: require('@/assets/image/c.svg'),
-                    text: ['ペアリング演算の高速なライブラリであるmclを用いるために現在勉強しています。', 'また、Arduinoのコードを書くためにも使用しています。'],
+                    text: 'ペアリング演算の高速なライブラリであるmclを用いるために現在勉強しています。また、Arduinoのコードを書くためにも使用しています。',
                 },
                 {
                     name: 'Java',
                     logo: require('@/assets/image/java-4.svg'),
-                    text: ['オブジェクト指向を学ぶ授業の演習でポーカーゲームを作成しました。', 'また学部3回生の時にAndroidアプリをJavaで作成しました。'],
+                    text: 'オブジェクト指向を学ぶ授業の演習でポーカーゲームを作成しました。また学部3回生の時にAndroidアプリをJavaで作成しました。',
                 },
                 {
                     name: 'JavaScript',
                     logo: require('@/assets/image/javascript-1.svg'),
-                    text: ['卒業研究にて扱った、FIDOを利用するために勉強しました。', '後述のNode.jsやVue.jsを利用するための土台となっています。']
+                    text: '卒業研究にて扱った、FIDOを利用するために勉強しました。後述のNode.jsやVue.jsを利用するための土台となっています。',
                 },
                 {
                     name: 'Node.js',
                     logo: require('@/assets/image/Node.js_logo.svg'),
-                    text: ['卒業研究にてFIDO認証のサーバを作成しました。', 'また、PythonのプログラムをNode.js上にて呼び出すプログラムを作成し、その機能をFIDOサーバに実装しました。'],
+                    text: '卒業研究にてFIDO認証のサーバを作成しました。また、PythonのプログラムをNode.js上にて呼び出すプログラムを作成し、その機能をFIDOサーバに実装しました。',
                 },
                 {
                     name: 'Vue.js',
                     logo: require('@/assets/image/logo.svg'),
-                    text: ['卒業研究にてフロントエンドを用意する必要があったため勉強しました。', 'また、このポートフォリオはVue.jsで記述しています。'],
+                    text: '卒業研究にてフロントエンドを用意する必要があったため勉強しました。また、このポートフォリオはVue.jsで記述しています。',
                 },
                 {
                     name: 'Git',
                     logo: require('@/assets/image/git-icon.svg'),
-                    text: ['ある程度のプロジェクト管理をこなすことができます。', 'このポートフォリオの開発にも、Gitを用いて管理しました。', 'PR方式の開発手法をグループで行ったことがあります。'],
+                    text: 'ある程度のプロジェクト管理をこなすことができます。このポートフォリオの開発にも、Gitを用いて管理しました。PR方式の開発手法をグループで行ったことがあります。',
                 }
             ]
         }
@@ -74,13 +72,18 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/style/_mixin.scss';
 
+.section {
+    @include section;
+}
+
 .skill {
     @include box-wrapper;
 }
 
 .content {
     @include box-shadow;
-    @include box(40%)
+    @include box(40%);
+    // background-color: #dbefbc;
 }
 
 .skill_name {
