@@ -29,7 +29,7 @@ export default {
                 },
                 {
                     name: 'My Portfolio Site',
-                    text: 'このポートフォリオです。初めてのフロントエンド作成のため、いろんな方のポートフォリオを拝見し吸収し作成しました。',
+                    text: 'このポートフォリオです。初めてのフロントエンド作成のため、Github上にてポートフォリオを公開されている方々のコードを参考に作成しました。',
                     url: 'https://yutookawa.github.io/portfolio',
                     lang: 'Vue.js'
                 },
