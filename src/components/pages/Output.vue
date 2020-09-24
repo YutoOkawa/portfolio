@@ -22,10 +22,10 @@ export default {
             msg: 'Output List',
             outputs: [
                 {
-                    name: 'Attribute-Based Signature',
-                    text: '属性ベース署名の実行サンプルプログラムです。Pythonで属性ベース署名のアルゴリズムを実装し、Node.jsから呼びだしています。ペアリング演算には、Pythonのライブラリである、Charm-Cryptoを使用しています。',
-                    url: 'https://github.com/YutoOkawa/node_ABS',
-                    lang: 'Python, Node.js'
+                    name: 'FIDO2対応認証サーバ',
+                    text: 'Go言語にて作成した、FIDO2(WebAuthn)に対応した認証サーバ。WebAuthnについての知見を深めるため、WebAuthnライブラリは用いず、できるだけ仕様に沿ってフルスクラッチで実装することを目指しました。',
+                    url: 'https://github.com/YutoOkawa/goFIDOServer',
+                    lang: 'Golang'
                 },
                 {
                     name: 'My Portfolio Site',

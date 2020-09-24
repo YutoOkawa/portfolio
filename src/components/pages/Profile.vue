@@ -35,7 +35,7 @@ export default {
                 {
                     title: 'University',
                     icon: 'university',
-                    text: '立命館大学院 情報理工学研究科'
+                    text: '立命館大学大学院 情報理工学研究科'
                 },
                 {
                     title: 'Laboratory',

@@ -21,7 +21,7 @@ export default {
                 {
                     name: 'Golang',
                     logo: require('@/assets/image/Go-Logo_Blue.svg'),
-                    text: '今一番熱心に取り組んでいます。プログラミング言語Go完全入門を一通り勉強し、現在はWebアプリケーションを作成するべく勉強を続けています。',
+                    text: '今一番熱心に取り組んでいます。プログラミング言語Go完全入門を一通り勉強し、現在FIDO2対応認証サーバの実装を進めています。',
                 },
                 {
                     name: 'Python',
@@ -51,7 +51,7 @@ export default {
                 {
                     name: 'Node.js',
                     logo: require('@/assets/image/Node.js_logo.svg'),
-                    text: '卒業研究にて提案手法のFIDOに対応した認証サーバを作成しました。WebAuthnの仕様に基づいてFIDO2の実装を行うことができます。',
+                    text: '卒業研究にて提案手法のFIDOに対応した認証サーバを作成しました。また、暗号ライブラリであるcoreを用いたペアリング暗号の実装を行うことができます。',
                 },
                 {
                     name: 'Vue.js',
