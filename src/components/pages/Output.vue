@@ -28,22 +28,22 @@ export default {
                     lang: 'Golang'
                 },
                 {
-                    name: 'My Portfolio Site',
-                    text: 'このポートフォリオです。初めてのフロントエンド作成のため、Github上にてポートフォリオを公開されている方々のコードを参考に作成しました。',
-                    url: 'https://yutookawa.github.io/portfolio',
-                    lang: 'Vue.js'
-                },
-                {
-                    name: 'partDownloader',
-                    text: 'メルカリの「プログラミング言語Go完全入門」にて取り組んだ課題で作成したプログラムです。goroutineを用いて、Web上のファイルを高速に取得することができます。',
-                    url: 'https://github.com/YutoOkawa/partDownloader',
-                    lang: 'Golang'
-                },
-                {
                     name: '属性ベース暗号方式を用いたFIDO2の拡張による代理認証の実現',
-                    text: 'SPT2020(オンライン開催)にて発表した論文です。FIDO認証に属性ベース暗号方式を組み込むことで、ユーザの所持する属性によるアクセス制御が可能としました。',
+                    text: 'SPT2020(オンライン開催)にて発表した論文です。FIDO認証に属性ベース暗号方式を組み込むことで、ユーザの所持する属性によるアクセス制御を可能としました。',
                     url: 'https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=203398&item_no=1&page_id=13&block_id=8',
                     lang: '日本語'
+                },
+                {
+                    name: 'Draft Booster Pack Simulator',
+                    text: '第2回Sekappyプログラミングチャレンジにて優秀賞をいただいた、Magic:The Gatheringのドラフトブースターパックの開封シミュレータです。',
+                    url: 'https://github.com/YutoOkawa/packopen',
+                    lang: 'python'
+                },
+                {
+                    name: 'n枚めくりシミュレータ',
+                    text: '第3回Sekappyプログラミングチャレンジにて優秀賞をいただいた、デッキからn枚めくったときに当たりが出る確率と期待値を計算するものです。',
+                    url: 'https://github.com/YutoOkawa/companySimulator',
+                    lang: 'python'
                 }
             ]
         }

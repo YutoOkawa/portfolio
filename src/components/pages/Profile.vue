@@ -25,7 +25,6 @@ export default {
     data () {
         return {
             msg: 'Profile',
-            text: '暗号とFIDOについて勉強しています。',
             contents: [
                 {
                     title: 'Name',
@@ -53,12 +52,6 @@ export default {
                     icon: ['fab', 'github'],
                     text: 'YutoOkawa',
                     url: 'https://github.com/YutoOkawa/'
-                },
-                {
-                    title: 'Facebook',
-                    icon: ['fab', 'facebook'],
-                    text: 'Ookawa Yuto',
-                    url: 'https://www.facebook.com/ookawa.yuuto.1/'
                 }
             ]
         }

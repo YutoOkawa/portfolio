@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Name",
+        "icon": "pen-alt",
+        "text": "大川 悠人 (Ookawa Yuto)"
+    },
+    {
+        "title": "University",
+        "icon": "university",
+        "text": "立命館大学大学院 情報理工学研究科"
+    },
+    {
+        "title": "Laboratory",
+        "icon": "tag",
+        "text": "サイバーセキュリティ研究室",
+        "url": "http://www.cysec.cs.ritsumei.ac.jp/"
+    },
+    {
+        "title": "Research Keyword",
+        "icon": "key",
+        "text": "FIDO, WebAuthn, 属性ベース署名"
+    },
+    {
+        "title": "Github",
+        "icon": ["fab", "github"],
+        "text": "YutoOkawa",
+        "url": "https://github.com/YutoOkawa/"
+    },
+    {
+        "title": "Facebook",
+        "icon": ["fab", "facebook"],
+        "text": "Ookawa Yuto",
+        "url": "https://www.facebook.com/ookawa.yuuto.1/"
+    }
+]
