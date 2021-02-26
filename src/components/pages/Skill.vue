@@ -5,7 +5,7 @@
             <div class="content" v-for="(skill, index) in skills" :key="index">
                 <h2 class="skill_name"> {{ skill.name }} </h2>
                 <img v-bind:src="skill.logo" class="lang_icon"><br>
-                <p class="skill_text"> {{ skill.text }} </p>
+                <!-- <p class="skill_text"> {{ skill.text }} </p> -->
             </div>
         </div>
     </div>
@@ -21,47 +21,47 @@ export default {
                 {
                     name: 'Golang',
                     logo: require('@/assets/image/Go-Logo_Blue.svg'),
-                    text: '今一番熱心に取り組んでいます。プログラミング言語Go完全入門を一通り勉強し、現在FIDO2対応認証サーバの実装を進めています。',
+                    text: '',
                 },
                 {
                     name: 'Python',
                     logo: require('@/assets/image/icons8-python.svg'),
-                    text: '楕円曲線暗号でよく用いられるペアリング演算を用いた暗号アルゴリズムの実装や、簡単なプログラムなどに使っています。そのプログラムの書きやすさから、よく利用しています。',
+                    text: '',
                 },
                 {
                     name: 'C',
                     logo: require('@/assets/image/c-2975.svg'),
-                    text: '大学1回生でプログラミングを始めて最初に習った言語です。授業内演習で擬似シェルのプログラムを書きました。また、スタックオーバーフロー等のCに潜む脆弱性を付く実験を行いました。',
+                    text: '',
                 },
                 {
                     name: 'C++',
                     logo: require('@/assets/image/c.svg'),
-                    text: 'ペアリング演算の高速なライブラリであるmclを用いるために現在勉強しています。また、Arduinoを用いた実験をするためにも使用しています。',
+                    text: '',
                 },
                 {
                     name: 'Java',
                     logo: require('@/assets/image/java-4.svg'),
-                    text: 'オブジェクト指向を学ぶ授業の演習でポーカーゲームを作成しました。また、学部3回生の時にAndroidアプリをJavaで作成しました。',
+                    text: '',
                 },
                 {
                     name: 'JavaScript',
                     logo: require('@/assets/image/javascript-1.svg'),
-                    text: '卒業研究にて扱った、FIDO2(WebAuthn)を利用するために勉強しました。',
+                    text: '',
                 },
                 {
                     name: 'Node.js',
                     logo: require('@/assets/image/Node.js_logo.svg'),
-                    text: '卒業研究にて提案手法のFIDOに対応した認証サーバを作成しました。また、暗号ライブラリであるcoreを用いたペアリング暗号の実装を行うことができます。',
+                    text: '',
                 },
                 {
                     name: 'Vue.js',
                     logo: require('@/assets/image/logo.svg'),
-                    text: 'このポートフォリオはVue.jsで作成しました。フロントエンドの知識はまだ浅いですが、このポートフォリオを通して学んでいきたいと思っています。',
+                    text: '',
                 },
                 {
                     name: 'Git',
                     logo: require('@/assets/image/git-icon.svg'),
-                    text: 'ある程度のプロジェクト管理をこなすことができます。このポートフォリオの開発にも、Gitを用いて管理しています。また、PR方式の開発手法をグループで行ったことがあります。',
+                    text: '',
                 }
             ]
         }
@@ -82,7 +82,7 @@ export default {
 
 .content {
     @include box-shadow;
-    @include box(40%);
+    @include box(15%);
     // background-color: #dbefbc;
 }
 
